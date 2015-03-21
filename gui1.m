@@ -240,7 +240,7 @@ if(handles.count > 0)
     handles.ratings(handles.count,5)
 end
 saveRating = handles.ratings;
-save(['/home/karthikeyan/Research/rateVideosUbuntu/gui/matFiles' handles.name],'saveRating');
+save(['/home/karthikeyan/Research/rateVideosUbuntu/gui/matFiles/' handles.name],'saveRating');
 if(handles.count > 1)
     handles.count = handles.count - 1;
     set(handles.edit1,'string',num2str(handles.ratings(handles.count,1)));
